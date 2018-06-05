@@ -1,0 +1,19 @@
+{
+  allPrismicTestimonial {
+    edges {
+      node {
+        data {
+          quote{
+            text
+          }
+          customername {
+            text
+          }
+          location {
+            text
+          }
+        }
+      }
+    }
+  }
+}
