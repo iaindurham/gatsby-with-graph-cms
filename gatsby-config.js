@@ -4,10 +4,15 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: 'gatsby-source-prismic',
+      resolve: 'gatsby-source-graphcms',
       options: {
-        repositoryName: 'sharecovercom',
-        accessToken: 'MC5XeFRncFNBQUFDY3RhX0Jr.GO-_ve-_ve-_vWFmdCLvv73vv73vv73vv73vv73vv71S77-9FGrvv73vv70O77-9eO-_ve-_ve-_vRjvv73vv71nbe-_vQ'
+        endpoint: 'https://api.graphcms.com/simple/v1/cji1abq172nvy0128h8bxzi3z',
+        query: `{
+          allLandingPages {
+            title
+            introBlurb
+          }
+        }`
       }
     },
     'gatsby-plugin-react-helmet'
